@@ -27,6 +27,6 @@ public class FirstProgram {
     public static void main(String[] args) {
         FirstProgram f1 = new FirstProgram();
         f1.addNdPrintValuesInArrays();
-        f1.addCalc(5,5);
+        f1.addCalc(10,40);
     }
 }
