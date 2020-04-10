@@ -49,6 +49,10 @@ public class Vehicle {
                 '}';
     }
 
+    public Vehicle createVehicle(){
+        return new Vehicle();
+    }
+
     public void start(){
         System.out.println("Vehicle started...");
     }

@@ -14,8 +14,14 @@ public class FourWheeler extends Vehicle {
     }
 
     @Override
+    public FourWheeler createVehicle(){
+        return new FourWheeler();
+    }
+
+    @Override
     public void start(){
         System.out.println("Fourwheeler car got started...");
+
     }
     @Override
     public void stop(){

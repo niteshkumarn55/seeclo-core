@@ -6,6 +6,10 @@ public class Sedan extends FourWheeler{
     }
 
     @Override
+    public Sedan createVehicle(){
+        return new Sedan();
+    }
+    @Override
     public void start(){
         System.out.println("Sedan's "+getEngine()+" got started...");
     }
