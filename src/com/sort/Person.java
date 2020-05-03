@@ -128,7 +128,7 @@ class PersonUtils {
             }
         }
         Collections.sort(persons, new FirstNameSorter().thenComparing(new LastNameSorter()).thenComparing(new AgeSorter()));
-        Collections.sort(persons, new GroupBySorter(l1));
+        Collections.sort(persons, new GroupBySorter(l1)); //Made dynamic instead of hardcoding like the above line
         System.out.println(persons);
 
     }
