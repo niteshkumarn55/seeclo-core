@@ -127,13 +127,13 @@ class PersonUtils {
                 l1.add(c);
             }
         }
-        Collections.sort(persons, new FirstNameSorter().thenComparing(new LastNameSorter()).thenComparing(new AgeSorter()));
-        Collections.sort(persons, new GroupBySorter(l1)); //Made dynamic instead of hardcoding like the above line
+        Collections.sort(persons, new FirstNameSorter().thenComparing(new LastNameSorter()).thenComparing(new AgeSorter())); //Sort by firstname then by lastname then by age
+        Collections.sort(persons, new GroupBySorter(l1)); //Made dynamic instead of hardcoding like the above line. The data is take by the sortBy Array
         System.out.println(persons);
 
     }
     public static void main(String[] args){
-        String[] s = {"firstName", "country"};
+        String[] s = {"firstName", "country"}; // First sort by first name then country -> print the result sorted based on this combination
         List a  = new ArrayList<>();
             a.add(new Person("s","a",1,"c"));
         a.add(new Person("d","f",2,"r"));
