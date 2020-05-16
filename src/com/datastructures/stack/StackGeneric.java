@@ -1,4 +1,4 @@
-package com.GenericsJava;
+package com.datastructures.stack;
 
 
 import java.util.Objects;
