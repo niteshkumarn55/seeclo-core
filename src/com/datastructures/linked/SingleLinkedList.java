@@ -73,7 +73,7 @@ public class SingleLinkedList<T> {
         Node previousNode = null;
         boolean flag = false;
         if(head == null){
-            System.out.println("No Elements to POP. LinkedList is Empty");
+            System.out.println("No Elements to delete. LinkedList is Empty");
         }else{
             while (current!=null){
                 if(current.data.equals(data)) {
@@ -114,6 +114,5 @@ public class SingleLinkedList<T> {
     public int size(){
         return this.size;
     }
-
 }
 

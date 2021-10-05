@@ -10,8 +10,14 @@ public class Lowes {
 //        String s = "NITESH";
         Lowes lowes = new Lowes();
 //        System.out.println(lowes.lengthOf(s.toCharArray()));
-        Integer[] i = {1, 3, 5, 2, 1, 9, 4, 4, 4, 9};
+   /*     Integer[] i = {1, 3, 5, 2, 1, 9, 4, 4, 4, 9};
         lowes.maxNdMin(Arrays.asList(i));
+*/
+        String blogName = "How";
+
+        String reverseString = reverseString(blogName);
+        System.out.println(reverseString);
+
     }
 
     public int lengthOf(char[] c){
@@ -39,6 +45,16 @@ public class Lowes {
        System.out.println("The max number is :: "+max);
        System.out.println("The min number is :: "+min);
    }
+
+    public static String reverseString(String string)
+    {
+        if (string.isEmpty()){
+            return string;
+        }
+        //Calling function recursively
+        String value = reverseString(string.substring(1)) + string.charAt(0);
+        return value;
+    }
 
 
 }

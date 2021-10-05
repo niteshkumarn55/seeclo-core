@@ -58,6 +58,8 @@ public class LinkedListMain {
         linkedList.deleteNode(new Person("priyanka",30));
         System.out.println("++++++ After Deleting Node ++++++ and the size is "+linkedList.size());
         linkedList.display();
+        linkedList.pop();
+        linkedList.deleteNode(new Person("priyanka",28));
 
 
     }
